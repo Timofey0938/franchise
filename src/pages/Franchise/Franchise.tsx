@@ -3,7 +3,7 @@ import styles from './Franchise.module.scss';
 
 const Franchise: FC = () => {
   return (
-    <div>
+    <div className={styles.franchise}>
       Франшиза
     </div>
   );
