@@ -1,0 +1,44 @@
+.wrapper {
+  height: fit-content;
+  width: 820px;
+  margin: 0 auto;
+  display: flex;
+
+  .infoContainer {
+    .header {
+      display: flex;
+      margin-bottom: 10px;
+  
+      .info {
+        margin-left: 20px;
+  
+        .nickname {
+          font-size: 30px;
+        }
+  
+        .name {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .avatarBox {
+    position: relative;
+    overflow: hidden;
+    width: 190px;
+    height: 190px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    .image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 192px;
+      height: 192px;
+      object-fit: cover;
+    }
+  }
+}

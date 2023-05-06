@@ -1,0 +1,27 @@
+@import 'assets/scss/variables.scss';
+@import 'assets/scss/mixins.scss';
+
+.login {
+  height: fit-content;
+  width: 400px;
+  @include container;
+  margin: 10px auto;
+  padding: 15px 20px;
+
+  .title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+  }
+
+  .register {
+    margin-top: 20px;
+    text-align: center;
+    color: $light-font-color;
+
+    .link {
+      text-decoration: underline;
+      color: $regular-font-color;
+    }
+  }
+}

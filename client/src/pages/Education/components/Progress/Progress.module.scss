@@ -1,0 +1,24 @@
+.progress {
+  margin-bottom: 20px;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+
+  .progressLine {
+    .title {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  
+    .progressBar {
+      width: 400px;
+    }
+  }
+
+  .currentLesson {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

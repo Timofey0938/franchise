@@ -1,0 +1,92 @@
+@import 'assets/scss/mixins.scss';
+@import 'assets/scss/variables.scss';
+
+.card {
+  height: 200px;
+  width: 700px;
+  padding: 20px;
+  @include container;
+  margin-bottom: 10px;
+  display: flex;
+  cursor: pointer;
+
+  .image {
+    height: 160px;
+    width: 250px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  .info {
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .topBlock {
+      display: flex;
+      justify-content: space-between;
+
+      .name {
+        font-size: 20px;
+        font-weight: 500;
+      }
+  
+      .tag {
+        width: fit-content;
+        padding: 2px 8px;
+        border-radius: 5px;
+        color: white;
+      }
+  
+      .red {
+        background-color: $accent-color;
+      }
+  
+      .yellow {
+        background-color: rgb(236, 208, 52);
+      }
+  
+      .green {
+        background-color: rgb(22, 194, 79);
+      }
+
+      .favorite {
+        color: $accent-color;
+
+        &:hover {
+          color: $regular-font-color;
+        }
+      }
+
+      .notFavorite {
+        color: $regular-font-color;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+
+    .bottomBlock {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .investAmount {
+        font-size: 18px;
+      }
+
+      .rating {
+        display: flex;
+        align-items: center;
+
+        .star {
+          height: 16px;
+          width: 16px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}

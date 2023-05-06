@@ -1,0 +1,12 @@
+@import 'assets/scss/variables.scss';
+
+.login {
+  margin-top: 20px;
+  text-align: center;
+  color: $light-font-color;
+
+  .link {
+    text-decoration: underline;
+    color: $regular-font-color;
+  }
+}

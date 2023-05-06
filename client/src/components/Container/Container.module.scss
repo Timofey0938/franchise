@@ -1,0 +1,22 @@
+@import 'assets/scss/mixins.scss';
+
+.wrapper {
+  width: fit-content;
+
+  .title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    @include container;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px 30px;
+  }
+}
+
+.centered {
+  margin: 0 auto;
+}

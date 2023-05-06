@@ -1,0 +1,42 @@
+.application {
+  width: 600px;
+
+  .result {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+
+    .reason {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .cancelPanel {
+    display: flex;
+    margin-top: 20px;
+
+    .returnButton {
+      width: 40px;
+      height: 40px;
+      background-color: #ECF2F7;
+      border-radius: 5px;
+      padding: 10px 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #E1E8F2;
+      }
+    }
+
+    .input {
+      margin: 0 5px;
+    }
+  }
+}

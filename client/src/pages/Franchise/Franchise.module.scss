@@ -1,0 +1,176 @@
+@import 'assets/scss/mixins.scss';
+@import 'assets/scss/variables.scss';
+@import 'react-alice-carousel/lib/scss/alice-carousel.scss';
+
+.wrapper {
+  display: flex;
+
+  .franchise {
+    @include container;
+    flex-grow: 1;
+    margin: 0 20px 0 200px;
+    padding: 30px;
+
+    .header {
+      .title {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 2rem;
+      }
+
+      .shortDescription {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+
+      .rating {
+        margin: 3px 0 8px 0;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 500;
+
+        .star {
+          height: 20px;
+          width: 20px;
+          margin-right: 6px;
+        }
+
+        .rateCount {
+          color: #555;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      margin-bottom: 20px;
+
+      .cover {
+        width: 600px;
+        margin-right: 20px;
+        border-radius: 10px;
+      }
+
+      .characteristics {
+        .characteristicTitle {
+          font-weight: 500;
+          margin-top: 10px;
+        }
+
+        .characteristicValue {
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .content {
+      .subtitle {
+        margin: 10px 0 5px 0;
+        font-size: 28px;
+        font-weight: 500;
+      }
+
+      .companyBox {
+        display: flex;
+
+        .companyName {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        .logo {
+          height: 70px;
+          margin: 20px 20px 0 0;
+          border-radius: 5px;
+        }
+      }
+
+      .ownerBox {
+        display: flex;
+        align-items: center;
+
+        .name {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        .avatar {
+          margin: 10px 20px 0 0;
+        }
+      }
+
+      .text {
+        font-size: 18px;
+        text-align: justify;
+      }
+
+      .facts {
+        display: flex;
+        margin: 30px 0;
+        font-size: 20px
+      }
+
+      .finalInfo {
+        display: flex;
+        justify-content: space-between;
+
+        .company {
+
+          .companyBox {
+            display: flex;
+
+            .logo {
+              height: 70px;
+              margin-right: 20px;
+              border-radius: 5px;
+            }
+          }
+        }
+
+
+        .finalTitle {
+          font-weight: 500;
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+
+        .name {
+          font-weight: 500;
+          font-size: 20px
+        }
+      }
+
+      .noReviews {
+        font-weight: 500;
+        font-size: 20px;
+      }
+
+      .review {
+        margin: 15px 0 15px 0;
+        font-size: 18px;
+
+        .title {
+          display: flex;
+          align-items: center;
+          font-weight: 500;
+
+          .avatar {
+            margin-right: 10px;
+          }
+        }
+
+        .rate {
+          display: flex;
+
+          .date {
+            margin: 3px 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+

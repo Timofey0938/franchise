@@ -1,0 +1,25 @@
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.block {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.left {
+  justify-content: start;
+}
+
+.marginTop {
+  margin-top: 40px;
+}
+
+.formError {
+  text-align: center;
+  color: red;
+}

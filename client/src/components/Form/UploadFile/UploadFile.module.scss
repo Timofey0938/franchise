@@ -1,0 +1,51 @@
+.uploadPhoto {
+  display: flex;
+
+  .wrapper {
+    width: 40px;
+    position: relative;
+  }
+
+  .fileInput {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .iconWrapper {
+    height: 40px;
+    width: 40px;
+    background-color: #ECF2F7;
+    border-radius: 0.375rem;
+    padding: 8px 12px;
+
+    &:hover {
+      background-color: #E1E8F2;
+    }
+  }
+
+  .fileButton {
+    max-width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .fileAdded {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+
+  .removeFile {
+    height: 24px;
+    width: 24px;
+    margin: 8px 12px;
+    padding: 2px 4px;
+    cursor: pointer;
+    border-radius: 0.375rem;
+
+    &:hover {
+      background-color: #ECF2F7;
+    }
+  }
+}

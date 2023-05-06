@@ -1,0 +1,35 @@
+import { Schema, model } from 'mongoose';
+
+const schema = new Schema({
+  name: { type: String, required: true, unique: true },
+  categories: [{ type: String }],
+  shortDescription: { type: String, required: true },
+  description: { type: String, required: true },
+  investment: { type: Number, required: true },
+  profit: { type: Number, required: true },
+  paybackTime: { type: Number, required: true },
+  startYear: { type: Number, required: true },
+  numOpen: { type: Number, required: true },
+  lumpSumPayment: { type: Number, required: true },
+  royalty: { type: Number, required: true },
+  advantages: { type: String, required: true },
+  companyName: { type: String, required: true },
+  companyDescription: { type: String, required: true },
+  companyStartYear: { type: Number, required: true },
+  companySiteUrl: { type: String, required: true },
+  inn: { type: Number, required: true },
+  ogrn: { type: Number, required: true },
+  cover: { type: String, required: true },
+  gallery: [{ type: String }],
+  presentation: { type: String, required: true },
+  finPlan: { type: String, required: true },
+  logo: { type: String, required: true },
+  procuration: { type: String },
+  rate: { type: Number, required: true },
+  purchases: { type: Number, required: true },
+  views: { type: Number, required: true },
+  reviews: [{ type: Object }],
+  verificated: { type: Boolean, required: true },
+});
+
+export const Franchise = model('Franchise', schema);

@@ -1,0 +1,7 @@
+@import './variables.scss';
+
+@mixin container {
+  border-radius: 15px;
+  background-color: $content-color;
+  box-shadow: $box-shadow;
+}
